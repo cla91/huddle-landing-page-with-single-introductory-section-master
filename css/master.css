@@ -1,0 +1,191 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+* {
+  margin:0 ;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: hsl(360, 100%, 100%);
+  background: url("../images/bg-mobile.svg") no-repeat top left;
+  background-size: contain; /* for even smaller screen */
+  background-color: hsl(257, 40%, 49%);
+}
+.container {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1rem 1fr 1rem auto 1rem auto;
+  grid-template-rows: auto 1fr auto auto;
+  margin: 2.375rem 2.5rem 0;
+  grid-gap: 1rem;
+  max-width: 1280px;
+}
+.logo {
+  display: block;
+  width: 40%;
+  max-width: 200px;
+}
+.main {
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main img {
+  display: block;
+  width: 100%;
+}
+.content {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  grid-gap: 1.5rem;
+}
+.main h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.625rem;
+  letter-spacing: -0.05rem;
+  line-height: 2.25rem;
+}
+.main p {
+  line-height: 1.5rem;
+  letter-spacing: -0.01rem;
+}
+.call-to-action:link, .call-to-action:visited {
+  display: block;
+  width: 200px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8125rem;
+  text-decoration: none;
+  background-color: hsl(360, 100%, 100%);
+  border-radius: 50px;
+  padding: 0.7rem;
+  color: hsl(257, 40%, 49%);
+  -webkit-box-shadow: 5px 5px 5px hsl(257, 40%, 30%);
+          box-shadow: 5px 5px 5px hsl(257, 40%, 30%);
+  text-align: center;
+}
+.call-to-action:hover, .call-to-action:active {
+  background-color: hsl(300, 69%, 71%);
+  color: hsl(360, 100%, 100%);
+}
+.footer {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+.social {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 0.625rem;
+}
+.social a:link, .social a:visited {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid hsl(360, 100%, 100%);
+  color: hsl(360, 100%, 100%);
+  border-radius: 100%;
+  width: 1.75rem;
+  height: 1.75rem;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+.social a:hover, .social a:active {
+  border: 1px solid hsl(300, 69%, 71%);
+  color: hsl(300, 100%, 71%);
+}
+
+@media only screen and (min-width: 376px) {
+  body {
+    background: url("../images/bg-desktop.svg") no-repeat top left;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+  }
+}
+@media only screen and (min-width: 620px) {
+  .main {
+  text-align: left;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 0;
+}
+  .content {
+   padding: 1rem 0rem 0rem 1rem;
+   grid-gap: 1.5rem;
+
+   justify-items: baseline;
+}
+  .footer {
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .content {
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+  .social a:link, .social a:visited {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+}
+}
+@media only screen and (min-width: 1024px) {
+  .container {
+    margin-top: 3.875em;
+  }
+  .content {
+    padding-top: 3rem;
+    padding-left: 3.5rem;
+  }
+  .main h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.01rem;
+    line-height: 3.75rem;
+  }
+  .main p {
+    font-size: 1.125rem;
+    line-height: 1.7rem;
+    letter-spacing: 0.03rem;
+  }
+  .call-to-action:link, .call-to-action:visited {
+    padding:1rem;
+  }
+}
+@media only screen and (min-width: 1360px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
