@@ -25,7 +25,7 @@ body {
   display: grid;
   -ms-grid-rows: auto 1rem 1fr 1rem auto 1rem auto;
   grid-template-rows: auto 1fr auto auto;
-  margin: 2.375rem 2.5rem 0;
+  padding: 2.375rem 2.5rem 0;
   grid-gap: 1rem;
   max-width: 1280px;
 }
@@ -163,7 +163,7 @@ body {
 }
 @media only screen and (min-width: 1024px) {
   .container {
-    margin-top: 3.875em;
+    padding-top: 3.875em;
   }
   .content {
     padding-top: 3rem;
@@ -186,6 +186,8 @@ body {
 }
 @media only screen and (min-width: 1360px) {
   .container {
+    padding-left: 0;
+    padding-right: 0;
     margin-left: auto;
     margin-right: auto;
   }
